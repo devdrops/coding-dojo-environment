@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo " "
+echo " >>> INSTALLING TOOLS"
+echo " "
+
+apt-get -y install nodejs npm
+
+echo " "
+echo " "
