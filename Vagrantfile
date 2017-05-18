@@ -7,7 +7,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell", path: "./provision/intro", run: "always"
   config.vm.provision "shell", path: "./provision/setup"
-  config.vm.provision "shell", path: "./provision/tools"
+  config.vm.provision "shell", path: "./provision/tools", privileged: false
 
   config.vm.provider "virtualbox" do |v|
     v.memory = 1024
